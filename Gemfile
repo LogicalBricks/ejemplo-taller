@@ -58,5 +58,6 @@ end
 # gem raylroady   # diagrama de base de datos 
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 2.0'
 end
