@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131005171025) do
+ActiveRecord::Schema.define(version: 20131005171026) do
+
+  create_table "banners", force: true do |t|
+    t.string   "archivo"
+    t.string   "url"
+    t.integer  "cliente_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "banners", ["cliente_id"], name: "index_banners_on_cliente_id"
 
   create_table "clientes", force: true do |t|
     t.string   "rfc"
