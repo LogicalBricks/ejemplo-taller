@@ -8,4 +8,6 @@ describe Cliente do
  it {should allow_value('yo@mail.com').for(:email)}
  it {should_not allow_value('yo').for(:email)}
  it {should validate_presence_of(:nombre_contacto)}
+ it {should validate_presence_of(:numero)}
+ it {should validate_numericality_of(:numero)}
 end
