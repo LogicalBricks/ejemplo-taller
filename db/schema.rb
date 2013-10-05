@@ -23,6 +23,16 @@ ActiveRecord::Schema.define(version: 20131005185202) do
 
   add_index "anuncios", ["ruteador_id"], name: "index_anuncios_on_ruteador_id"
 
+  create_table "banners", force: true do |t|
+    t.string   "archivo"
+    t.string   "url"
+    t.integer  "cliente_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "banners", ["cliente_id"], name: "index_banners_on_cliente_id"
+
   create_table "clientes", force: true do |t|
     t.string   "rfc"
     t.string   "razon_social"
@@ -43,6 +53,7 @@ ActiveRecord::Schema.define(version: 20131005185202) do
     t.text     "observaciones"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "serie"
   end
 
 end

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Archivo:
+  = @banner.archivo
+%p
+  %b Url:
+  = @banner.url
+%p
+  %b Cliente:
+  = @banner.cliente
+
+= link_to 'Edit', edit_banner_path(@banner)
+\|
+= link_to 'Back', banners_path
