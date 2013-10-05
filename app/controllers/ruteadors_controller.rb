@@ -69,6 +69,6 @@ class RuteadorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ruteador_params
-      params.require(:ruteador).permit(:usuario, :password, :puerto, :nombre, :observaciones)
+      params.require(:ruteador).permit(:usuario, :password, :puerto, :nombre, :observaciones, :serie)
     end
 end

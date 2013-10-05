@@ -5,4 +5,5 @@ class Ruteador < ActiveRecord::Base
 	validates_numericality_of :puerto
 	validates_presence_of :usuario
 	validates_presence_of :observaciones
+	validates_presence_of :serie
 end
