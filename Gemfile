@@ -54,10 +54,11 @@ group :test do
 end
 
 
-# gem state_machine  # maquinas de estados -.. 
-# gem raylroady   # diagrama de base de datos 
+# gem state_machine  # maquinas de estados -..
+# gem raylroady   # diagrama de base de datos
 
 group :development, :test do
+  gem 'factory_girl'
   gem 'pry'
   gem 'rspec-rails', '~> 2.0'
 end
