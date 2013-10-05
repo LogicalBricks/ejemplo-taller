@@ -1,0 +1,2 @@
+module RuteadorsHelper
+end

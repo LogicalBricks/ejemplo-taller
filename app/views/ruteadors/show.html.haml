@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Usuario:
+  = @ruteador.usuario
+%p
+  %b Password:
+  = @ruteador.password
+%p
+  %b Puerto:
+  = @ruteador.puerto
+%p
+  %b Nombre:
+  = @ruteador.nombre
+%p
+  %b Observaciones:
+  = @ruteador.observaciones
+
+= link_to 'Edit', edit_ruteador_path(@ruteador)
+\|
+= link_to 'Back', ruteadors_path

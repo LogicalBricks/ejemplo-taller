@@ -1,0 +1,27 @@
+%h1 Listing ruteadors
+
+%table
+  %tr
+    %th Usuario
+    %th Password
+    %th Puerto
+    %th Nombre
+    %th Observaciones
+    %th
+    %th
+    %th
+
+  - @ruteadors.each do |ruteador|
+    %tr
+      %td= ruteador.usuario
+      %td= ruteador.password
+      %td= ruteador.puerto
+      %td= ruteador.nombre
+      %td= ruteador.observaciones
+      %td= link_to 'Show', ruteador
+      %td= link_to 'Edit', edit_ruteador_path(ruteador)
+      %td= link_to 'Destroy', ruteador, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Ruteador', new_ruteador_path
