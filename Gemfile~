@@ -53,6 +53,6 @@ group :test do
 end
 
 
-# gem state_machine  # maquinas de estados -.. 
+# gem state_machine  # 
 # gem raylroady   # diagrama de base de datos 
 

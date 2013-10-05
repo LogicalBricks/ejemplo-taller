@@ -1,0 +1,25 @@
+= form_for @ruteador do |f|
+  - if @ruteador.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@ruteador.errors.count, "error")} prohibited this ruteador from being saved:"
+      %ul
+        - @ruteador.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :usuario
+    = f.text_field :usuario
+  .field
+    = f.label :password
+    = f.text_field :password
+  .field
+    = f.label :puerto
+    = f.text_field :puerto
+  .field
+    = f.label :nombre
+    = f.text_field :nombre
+  .field
+    = f.label :observaciones
+    = f.text_area :observaciones
+  .actions
+    = f.submit 'Save'
