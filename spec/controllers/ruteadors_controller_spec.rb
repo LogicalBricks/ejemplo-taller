@@ -24,7 +24,7 @@ describe RuteadorsController do
   # Ruteador. As you add validations to Ruteador, be sure to
   # adjust the attrioutes here as well.
   #prueba valida
-  let(:valid_attributes) { { "usuario" => "MyString" , "password" => "hola123434", "puerto" =>1223, "nombre" => "algunnombre", "observaciones"  => "texto muy grande  texto muy grande  texto muy grande  texto muy grande  texto muy grande  texto muy grande   "   } }
+  let(:valid_attributes) { { "usuario" => "MyString" , "password" => "hola123434", "puerto" =>1223, "nombre" => "algunnombre", "observaciones"  => "texto muy grande  texto muy grande  texto muy grande  texto muy grande  texto muy grande  texto muy grande   " , "serie" => "12131GAGA15"  } }
 
 # Prueba con errores
 # let(:valid_attributes) { { "usuario" => "MyString" , "password" => "hola123434", "puerto" =>"2a3", "nombre" => "algunnombre", "observaciones"  => "texto muy grande  texto muy grande  texto muy grande  texto muy grande  texto muy grande  texto muy grande   "   } }

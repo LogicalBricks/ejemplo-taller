@@ -6,7 +6,7 @@ class CreateRuteadors < ActiveRecord::Migration
       t.string :puerto
       t.string :nombre
       t.text :observaciones
-
+      
       t.timestamps
     end
   end
