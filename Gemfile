@@ -58,7 +58,7 @@ end
 # gem raylroady   # diagrama de base de datos
 
 group :development, :test do
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'pry'
   gem 'rspec-rails', '~> 2.0'
 end
