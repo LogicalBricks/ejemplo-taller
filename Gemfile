@@ -47,6 +47,7 @@ end
 gem "haml-rails"
 
 group :test do
+  gem 'shoulda-matchers'
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
@@ -56,3 +57,6 @@ end
 # gem state_machine  # maquinas de estados -.. 
 # gem raylroady   # diagrama de base de datos 
 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
