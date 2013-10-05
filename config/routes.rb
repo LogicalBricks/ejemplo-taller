@@ -1,4 +1,6 @@
 EjemploTaller::Application.routes.draw do
+  resources :anuncios
+
   resources :clientes
   resources :ruteadors
 

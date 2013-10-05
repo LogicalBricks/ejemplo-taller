@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131005183404) do
+ActiveRecord::Schema.define(version: 20131005185202) do
+
+  create_table "anuncios", force: true do |t|
+    t.date     "fecha_inicio"
+    t.date     "fecha_fin"
+    t.integer  "ruteador_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "anuncios", ["ruteador_id"], name: "index_anuncios_on_ruteador_id"
 
   create_table "clientes", force: true do |t|
     t.string   "rfc"

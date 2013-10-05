@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Fecha inicio:
+  = @anuncio.fecha_inicio
+%p
+  %b Fecha fin:
+  = @anuncio.fecha_fin
+%p
+  %b Ruteador:
+  = @anuncio.ruteador
+
+= link_to 'Edit', edit_anuncio_path(@anuncio)
+\|
+= link_to 'Back', anuncios_path

@@ -1,0 +1,23 @@
+%h1 Listing anuncios
+
+%table
+  %tr
+    %th Fecha inicio
+    %th Fecha fin
+    %th Ruteador
+    %th
+    %th
+    %th
+
+  - @anuncios.each do |anuncio|
+    %tr
+      %td= anuncio.fecha_inicio
+      %td= anuncio.fecha_fin
+      %td= anuncio.ruteador
+      %td= link_to 'Show', anuncio
+      %td= link_to 'Edit', edit_anuncio_path(anuncio)
+      %td= link_to 'Destroy', anuncio, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Anuncio', new_anuncio_path
