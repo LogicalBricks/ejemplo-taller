@@ -1,7 +1,7 @@
 class CreateClientes < ActiveRecord::Migration
   def change
     create_table :clientes do |t|
-      t.string :RFC
+      t.string :rfc
       t.string :razon_social
       t.string :direccion
       t.string :telefono

@@ -1,3 +1,3 @@
 class Cliente < ActiveRecord::Base
-	validates :RFC, presence: true
+	validates :rfc, presence: true
 end
