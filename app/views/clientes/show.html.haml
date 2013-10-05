@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Rfc:
+  = @cliente.RFC
+%p
+  %b Razon social:
+  = @cliente.razon_social
+%p
+  %b Direccion:
+  = @cliente.direccion
+%p
+  %b Telefono:
+  = @cliente.telefono
+%p
+  %b Email:
+  = @cliente.email
+%p
+  %b Nombre contacto:
+  = @cliente.nombre_contacto
+
+= link_to 'Edit', edit_cliente_path(@cliente)
+\|
+= link_to 'Back', clientes_path

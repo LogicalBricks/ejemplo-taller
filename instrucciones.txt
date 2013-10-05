@@ -6,16 +6,19 @@ AP
   - observaciones (texto libre) (presencia)
 
 Cliente
-  RFC 
-  Razón Social 
+  RFC
+  Razón Social
   Dirección
   Telefóno
   Correo electrónico (presencia, validar formato)
   Nombre de Contacto (presencia)
-  
+
 
 - Scaffold
 - rake db:migrate
 - rake db:test:prepare
 
 - rake db:drop && rake db:create && rake db:migrate && rake db:test:prepare
+
+validates :email, format: { with:  /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/,
+    message: "Only letters allowed" }
